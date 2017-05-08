@@ -13,5 +13,13 @@
     {% include {{ script }} %}
   {% endfor %}
 
+  <script type="text/javascript">
+  window.addEventListener("intempt.amw-demo-tracker-1.ready", function() {
+      //do something when tracker has been loaded;
+      //the tracker object becomes accessible at window._intempt["amw-demo-tracker-1"] after loading;
+  });
+  !function(a,b){if(window.__intempt&&window._intempt)a&&(window.__intempt.init_tracker?window.__intempt.init_tracker(a):window.__intempt.startup_configs.push(a));else{window.__intempt={},window.__intempt.startup_configs=[],a&&window.__intempt.startup_configs.push(a);var c=document.createElement("script");c.type="text/javascript",c.async=!0,c.src=b||"https://cdn.intempt.com/intempt.min.js";var d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(c,d)}}({orgId:"amw-demo-1",trackerId:"amw-demo-tracker-1",token:"08b0aef176d3e57bc5f4f117d7361abdfdc74a83"});
+  </script>
+
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 </head>
